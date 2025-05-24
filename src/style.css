@@ -1,0 +1,63 @@
+body{
+  font-family: arial, sans-serif;
+  font-weight: bold;
+  margin: 0;
+  background-color: rgb(98, 197, 22);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+ }
+ 
+ html{
+  font-size: 62.5%;
+ }
+
+ .players{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem;
+  padding: 1rem 4rem;
+ }
+
+ .players-btn{
+  border: 0.2rem dotted;
+  margin: 1rem;
+  padding: 5rem 7rem;
+ }
+ h2{
+  font-size: 3rem;
+ }
+
+ .display-message{
+  height: 80px;
+  width: 100vw;
+  background-color: antiquewhite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+ }
+ 
+ .choose{
+  margin-bottom:30px ;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+ }
+ 
+ .choose-btn{
+  font-size: 5rem;
+  margin: 1rem;
+  padding: 3rem 4rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: #fff;
+  color: #000;
+  justify-content: flex-end;
+  align-items: center;
+ }
+
+ 
