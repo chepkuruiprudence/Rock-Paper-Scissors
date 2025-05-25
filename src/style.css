@@ -1,63 +1,153 @@
 body{
-  font-family: arial, sans-serif;
-  font-weight: bold;
+  font-family: 'Press Start 2P', cursive;
   margin: 0;
-  background-color: rgb(98, 197, 22);
+  padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2rem;
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
  }
- 
  html{
   font-size: 62.5%;
  }
+
+ .game-container {
+  background-color: #9ccc1d;
+  font-weight: 600;
+  padding: 80px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+  position: relative;
+}
+  
+ .copyright{
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  margin: 1rem;
+  gap: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+ }
+
+  .results{
+    font-size: 1.5rem;
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 0;
+    gap: 5rem;
+    margin-right: 5rem;
+    justify-content: space-between;
+
+  }
+
 
  .players{
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 2rem;
+  margin: 3rem;
   padding: 1rem 4rem;
+  font-weight: 700;
  }
 
  .players-btn{
-  border: 0.2rem dotted;
-  margin: 1rem;
-  padding: 5rem 7rem;
+  font-size: 10rem;
+  border: 0.2rem dashed;
+  padding: 1.5rem 3rem;
+  background-color:  #9ec91e;
  }
  h2{
-  font-size: 3rem;
+  font-size: 2rem;
+  margin: 2rem;
+  margin-bottom: 0.5rem;
  }
 
  .display-message{
-  height: 80px;
-  width: 100vw;
-  background-color: antiquewhite;
+  height: 70px;
+  width: 145%;
+  background-color:#f2c244;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 2rem;
+  margin: 0.5rem 0;
  }
  
  .choose{
-  margin-bottom:30px ;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  margin-bottom: 2rem;
  }
  
  .choose-btn{
-  font-size: 5rem;
-  margin: 1rem;
-  padding: 3rem 4rem;
+  font-family: 'Press Start 2P', cursive;
+  margin: 2rem;
+  padding: 2rem 3rem;
   border: none;
   border-radius: 1rem;
   background-color: #fff;
   color: #000;
-  justify-content: flex-end;
-  align-items: center;
+  position: relative;
+  bottom: 30px;
+  
  }
+
+ .emoji{
+  font-size: 8rem;
+  line-height: 1;
+ }
+
+ .label {
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 882px) {
+  .results {
+    font-size: 6px;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .players {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .players-btn{
+    font-size: 2rem;
+  }
+
+  .choose-btn{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .emoji{
+    font-size: 3rem;
+  }
+
+  .copyright{
+    font-size: 5px;
+  }
+  .display-message{
+    font-size: 1rem;
+  }
+}
+
+
 
  

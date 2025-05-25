@@ -5,24 +5,60 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="/src/style.css" />
   </head>
   <body>
+    <div class="game-container">
+    <div><p class="copyright">
+      &copy; 2025
+      <a
+        href="https://www.linkedin.com/in/prudence-chepkurui-8709a2284/"
+        target="_blank"
+      >
+        Prudence Chepkurui</a
+      >
+    </p>
+  </div>
+    <div class="results">
+      <h3>Computer <span id="computerScore">0</span></h3>
+      <h3><span id="playerScore">0</span> Player </h3>
+    </div>
+
     <div class="players">
       <div>
         <h2>Computer</h2>
-        <button class="players-btn"></button>
+        <button class="players-btn" id="computerChoiceBtn"></button>
       </div>
-      <span class="display-message">Winner</span>
+      <span class="display-message" id="showResult">Winner</span>
       <div>
         <h2>Player</h2>
-        <button class="players-btn"></button>
+        <button class="players-btn" id="playerChoiceBtn"></button>
       </div>
     </div>
+    
     <div class="choose">
-      <button class="choose-btn">👊<br>Rock</button>
-      <button class="choose-btn">🖐️<br>Paper</button>
-      <button class="choose-btn">🖖<br>Scissors</button>
+      <button class="choose-btn" onclick="playGame('rock')">
+        <div class="emoji">✊</div>
+        <div class="label">Rock</div>
+      </button>
+      <button class="choose-btn" onclick="playGame('paper')">
+        <div class="emoji">✋</div>
+        <div class="label">Paper</div>
+      </button>
+      <button class="choose-btn" onclick="playGame('scissors')">
+        <div class="emoji">✌️</div>
+        <div class="label">Scissors</div>
+      </button>
     </div>
+
+    <script src="/src/main.js"></script>
+  </div>
   </body>
 </html>
