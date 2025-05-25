@@ -37,6 +37,3 @@ function playGame(playerChoice) {
   computerChoiceBtn.textContent = emojiMap[computerChoice];
   playerChoiceBtn.textContent = emojiMap[playerChoice];
 }
-document.addEventListener('contextmenu', function(event) {
-  event.preventDefault();
-});
